@@ -1,0 +1,8 @@
+.seperatorWrapper {
+  margin: 48px 0;
+}
+
+.horizontalLine {
+  height: 1px;
+  background-color: var(--light-grey);
+}

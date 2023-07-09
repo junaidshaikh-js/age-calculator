@@ -1,0 +1,62 @@
+.sectionWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+}
+
+.fieldsWrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.section {
+  background-color: var(--white);
+  padding: 32px;
+  border-radius: 8px;
+  border-bottom-right-radius: 56px;
+  margin: auto 8px;
+  width: 600px;
+  max-width: 100%;
+}
+
+.buttonWrapper {
+  position: relative;
+}
+
+.submitButton {
+  background-color: var(--purple);
+  border-radius: 50%;
+  border: 0;
+  padding: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.submitButton:hover {
+  background-color: var(--off-black);
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 30em) {
+  .section {
+    padding: 24px;
+  }
+  .submitButton {
+    height: 56px;
+    width: 56px;
+    right: 50%;
+    transform: translate3d(50%, -50%, 0);
+  }
+  .submitButton img {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,7 +1,38 @@
+:root {
+  --smokey-grey: hsl(0, 1%, 44%);
+  --light-grey: hsl(0, 0%, 86%);
+  --off-white: hsl(0, 0%, 94%);
+  --white: hsl(0, 0%, 100%);
+  --purple: hsl(259, 100%, 65%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--off-white);
+}
+
+button:focus,
+input:focus {
+  outline-offset: 2px;
+  outline: 2px dotted var(--purple);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
